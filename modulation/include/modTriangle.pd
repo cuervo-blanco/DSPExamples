@@ -1,0 +1,16 @@
+#N canvas 74 335 450 300 12;
+#X obj 66 87 phasor~ 0.4;
+#X obj 66 171 *~;
+#X obj 66 111 expr~ 2 * (abs(($v1 * 2) - 1));
+#X obj 66 52 inlet frequency;
+#X obj 186 52 inlet phase;
+#X obj 280 52 inlet match;
+#X obj 84 144 ramp-sel \$1;
+#X obj 66 195 outlet~ output;
+#X connect 0 0 2 0;
+#X connect 1 0 7 0;
+#X connect 2 0 1 0;
+#X connect 3 0 0 0;
+#X connect 4 0 0 1;
+#X connect 5 0 6 0;
+#X connect 6 0 1 1;

@@ -1,0 +1,16 @@
+#N canvas 88 191 554 300 12;
+#X obj 200 96 inlet frequency;
+#X obj 320 96 inlet phase;
+#X obj 200 124 osc~ 0.4;
+#X obj 200 148 +~ 1;
+#X obj 239 148 ramp-sel \$1;
+#X obj 200 172 *~;
+#X obj 414 96 inlet match;
+#X obj 200 196 outlet~;
+#X connect 0 0 2 0;
+#X connect 1 0 2 1;
+#X connect 2 0 3 0;
+#X connect 3 0 5 0;
+#X connect 4 0 5 1;
+#X connect 5 0 7 0;
+#X connect 6 0 4 0;
