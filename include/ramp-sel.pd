@@ -1,0 +1,17 @@
+#N canvas 643 213 450 300 12;
+#X obj 26 182 vline~;
+#X msg 65 155 0 10;
+#X msg 26 155 1 10;
+#X obj 26 123 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 65 124 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 26 15 inlet selection;
+#X obj 26 206 outlet~ ramp;
+#X obj 26 100 sel \$1;
+#X connect 0 0 6 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 2 0;
+#X connect 4 0 1 0;
+#X connect 5 0 7 0;
+#X connect 7 0 3 0;
+#X connect 7 1 4 0;
