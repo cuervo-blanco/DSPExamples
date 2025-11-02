@@ -22,3 +22,6 @@ A module showcasing correlation and related algorithms
 
 - **[correlationExample1.pd](correlation/correlationExample1.pd)**
     An example with the usage of the correlation object.
+
+- **[correlationGUI.pd](correlation/correlationGUI.pd)**
+    A wrapper of the correlation object with a meter from -1 to 1.
